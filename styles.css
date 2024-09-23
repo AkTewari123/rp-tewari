@@ -79,6 +79,6 @@
 }
   
 .hover-underline-animation:hover:after {
-    transform: scaleX(1);
+    transform: scaleX(1.2);
     /*transform-origin: bottom left;*/
 }
