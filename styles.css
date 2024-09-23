@@ -1,20 +1,53 @@
 /* ----------------- Class CSS ----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+
+
+* {
+    font-family: "Outfit";
+}
+:root {
+    --accentColor: rgb(0,87,255);
+}
 
 .about{
     width:400px;
     margin: auto;
 }
 
-.about-team{
-    color:rgb(82, 81, 81)
-}
 
 .authors{
-    background-color: #dbe3e7;
+    background-color: white;
 }
 
+#aboutMeGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.aboutMeCards {
+    align-content: center;
+    padding: 10px;
+    border: 2px solid rgb(39, 37, 37);
+    border-radius: 20px;
+}
+
+#chessPicture {
+    border-radius: 100%;
+    width: 30%;
+    margin-left: 35%;
+
+}
+#codingPicture {
+    border-radius: 100%;
+    width: 30%;
+    margin-left: 35%;
+
+}
 .body{
-    background-color: rgb(90, 92, 92);
+    background-color: white;
 }
 
 .footer{
@@ -26,13 +59,31 @@
 }
 
 .nb-background-color{   /* navbar background color */
-    background-color: #023E8A;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+navbar {
+    padding: 0px !important;
+}
+
+#aboutMeName {
+    text-align: center;
+}
+
+#aboutMe {
+    padding: 20px 0px;
 }
 
 .nbMenuItem{               /* navbar link text properties */
     font-size:25px;
     margin-left: 10px;
     margin-right: 10px;
+    color: black !important;
+    font-family: "Outfit";
+}
+.nbMenuItem:last-child {
+    margin-right: 20px;
 }
 
 .overview{
@@ -62,7 +113,7 @@
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-    /*color: #0087ca;*/
+    color: #0087ca;
   }
   
 .hover-underline-animation:after {
@@ -73,12 +124,12 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #eae6e6;
+    background-color: black;
     /*transform-origin: bottom right;*/
     transition: transform 0.35s ease-out;
 }
   
 .hover-underline-animation:hover:after {
-    transform: scaleX(1);
+    transform: scaleX(.9);
     /*transform-origin: bottom left;*/
 }
