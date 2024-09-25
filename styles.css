@@ -1,135 +1,266 @@
 /* ----------------- Class CSS ----------------- */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap");
 
 * {
-    font-family: "Outfit";
+  font-family: "Outfit";
 }
 :root {
-    --accentColor: rgb(0,87,255);
+  --accentColor: #1e57a2;
 }
 
-.about{
-    width:400px;
-    margin: auto;
+#explanationText {
+  font-size: 1.1rem;
+  display: inline;
 }
 
+#tableHeader {
+  background-color: var(--accentColor) !important;
+  color: white;
+  text-align: center;
+}
 
-.authors{
-    background-color: white;
+#explanationSection {
+  background-color: var(--accentColor);
+  width: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  color: white;
+}
+
+#explanationText {
+  padding: 20px 0px;
+  display: inline;
+}
+
+.about {
+  width: 400px;
+  margin: auto;
+}
+
+.stepHeader {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.authors {
+  background-color: white;
 }
 
 #aboutMeGridContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 5%;
+  width: 72%;
+  justify-items: center;
+  align-items: center;
+}
+
+.backgroundText {
+  font-size: 1.3em;
+  text-align: left;
+}
+
+#rationaleImage {
+    width: 300px ;
+}
+
+.landingPageImage {
+  display: inline;
+  border-radius: 20px;
+  height: 30%;
+  width: 30%;
+  display: relative;
+  margin: auto auto;
+}
+
+ul {
+  list-style-type: square;
+  font-weight: 500;
 }
 
 .aboutMeCards {
-    align-content: center;
-    padding: 10px;
-    border: 2px solid rgb(39, 37, 37);
-    border-radius: 20px;
+  padding: 10px;
+  /* margin-left: 7%; */
+  display: block;
+  border: 2px solid rgb(39, 37, 37);
+  border-radius: 20px;
+  height: 105%;
 }
 
-#chessPicture {
-    border-radius: 100%;
-    width: 30%;
-    margin-left: 35%;
-
+.pictures {
+  border-radius: 100%;
+  width: 80px;
+  margin-left: 35%;
+  align-self: center;
 }
-#codingPicture {
-    border-radius: 100%;
-    width: 30%;
-    margin-left: 35%;
-
-}
-.body{
-    background-color: white;
+.body {
+  background-color: white;
 }
 
-.footer{
-    background-color: #023E8A;
+.footer {
+  background-color: #023e8a;
 }
 
-.icon-white{            /* Arrow icon at bottom of page */
-    color: #FFFFFF;
+.icon-white {
+  /* Arrow icon at bottom of page */
+  color: #ffffff;
 }
 
-.nb-background-color{   /* navbar background color */
-    background-color: white;
-    border-bottom: 1px solid black;
+.nb-background-color {
+  /* navbar background color */
+  background-color: white;
+  border-bottom: 1px solid black;
 }
 
 navbar {
-    padding: 0px !important;
+  padding: 0px !important;
 }
 
 #aboutMeName {
-    text-align: center;
+  text-align: center;
 }
 
 #aboutMe {
-    padding: 20px 0px;
+  padding: 20px 0px;
 }
 
-.nbMenuItem{               /* navbar link text properties */
-    font-size:25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: black !important;
-    font-family: "Outfit";
+.nbMenuItem {
+  /* navbar link text properties */
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black !important;
+  font-family: "Outfit";
 }
 .nbMenuItem:last-child {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-.overview{
-    background-color: #dbe3e7;
+.overview {
+  background-color: #dbe3e7;
 }
 
-.ovPadLeft{
-    padding-left: 20px;
+#buttonComp {
+  color: black !important;
+  background-color: black !important;
 }
 
-.ovPadRight{  
-    padding-right: 20px;
+.ovPadLeft {
+  padding-left: 20px;
 }
 
-.procedure{
-    background-color: #dbe3e7;
-    padding: 1px;
+.ovPadRight {
+  padding-right: 20px;
 }
 
-.showcase{
-    background-color: #8fa3ab; /*#0096c7*/
+.procedure {
+  background-color: white;
+  padding: 1px;
 }
+
+/* background-color: #8fa3ab; #0096c7 */
 
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-  }
-  
-.hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    /*transform-origin: bottom right;*/
-    transition: transform 0.35s ease-out;
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
 }
-  
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: transform 0.35s ease-out;
+}
+
 .hover-underline-animation:hover:after {
-    transform: scaleX(.9);
-    /*transform-origin: bottom left;*/
+  transform: scaleX(1.1);
+  /*transform-origin: bottom left;*/
+}
+
+.stepImage {
+  width: 100px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+
+.smallerSteps {
+    width: 200px !important;
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+    .landingPage {
+        font-size: 80%;
+    }
+  #aboutMeGridContainer {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    grid-auto-columns: auto;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    justify-items: center;
+  }
+  .aboutMeCards {
+    height: 100%;
+    margin-top: 10%;
+    width: 90% !important;
+
+  }
+  .pictures {
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    display: grid;
+
+  }
+}
+
+@media (max-width: 768px) {
+    #aboutMeGridContainer {
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        grid-auto-columns: auto;
+        width: 50%;
+        align-items: center;
+        justify-items: center;
+      }
+      .pictures {
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        display: grid;
+
+      }
+      .aboutMeCards {
+
+        width: 150% !important;
+      }
+    .landingPageImage {
+        width:40% !important;
+      }
+      .landingPage {
+        font-size: 50%;
+    }
 }

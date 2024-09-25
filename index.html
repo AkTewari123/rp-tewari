@@ -26,110 +26,218 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="body">
-    <div class="container-lg">
-      <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
-        <a href="#" class="navbar-brand">
-          <img
-            src="img/droplet.png"
-            alt="Water Logo"
-            class="d-inline-block align-text-top w-50"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <body class="body landingPage">
+    <nav class="navbar navbar-expand-lg navbar-light nb-background-color">
+      <a href="index.html" class="navbar-brand">
+        <img
+          src="img/voltage.png"
+          alt="Water Logo"
+          width="80px"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                href="author.html"
-                class="nav-link hover-underline-animation nbMenuItem"
-                >Author</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="procedure.html"
-                class="nav-link hover-underline-animation nbMenuItem"
-              >
-                Procedure</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="results.html"
-                class="nav-link hover-underline-animation nbMenuItem"
-                >Results</a
-              >
-            </li>
-          </ul>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              href="author.html"
+              class="nav-link hover-underline-animation hover-link-underline-secondary nbMenuItem"
+              >Author</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="procedure.html"
+              class="nav-link hover-underline-animation nbMenuItem"
+            >
+              Procedure</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="results.html"
+              class="nav-link hover-underline-animation nbMenuItem"
+              >Results</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="explanationSection">
+      <h1>My Research Project</h1>
+      <div id="explanationText">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello and welcome to my page about my
+        research project! Research was a fun and interesting experience. At High
+        Technology High School, Research Practicum is a core component of your
+        time here. It teaches you about the scientific process and how to
+        overcome certain obstacles to work toward your goal. In addition, it
+        allows you to learn more about a field of science that may interest you.
+        All in all, it's an incredible journey that I very much reccomend. This
+        website documents my progress and my results throughout my research
+        journey.
+      </div>
+    </section>
+    <section class="overview text-dark p-2 text-left">
+      <div class="container">
+        <div class="row">
+          <!-- <img
+            class="img-fluid w-25"
+            src="/img/19418.jpeg"
+            alt="Temperature graph"
+          /> -->
+          <div class="col-sm-7 p3">
+            <h1 class="ovPadLeft">Background</h1>
+            <div class="lead overview-font ovPadLeft backgroundText">
+              In a world that was shaken by a viral pandemic, humankind
+              shouldn't expose itself to another epidemic, one caused by
+              microorganisms.
+              <ul>
+                <li>
+                  This experiment used direct current to shock yeast
+                  (Schizosaccharomyces Pombe)
+                </li>
+                <li>
+                  This research project explored a novel way to treat fungal
+                  infection
+                </li>
+                <li>
+                  Methods to treat fungal infections are aren't too well
+                  developed
+                </li>
+                <li>
+                  While the results were not signifcant, this research project
+                  gives way to other researchers who plan to explore ways to
+                  treat fungal diseases
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="/researchScreenshots/yeastImage.png"
+            class="landingPageImage"
+            alt="Water temperature thermal graph"
+          />
         </div>
-      </nav>
-      <section class="overview text-dark p-2 text-left">
-        <div class="container">
-          <div class="row">
+        <div class="row">
+          <!-- <img
+            class="img-fluid w-25"
+            src="/img/19418.jpeg"
+            alt="Temperature graph"
+          /> -->
+          <div class="col-sm-7 p3">
+            <h1 class="ovPadLeft">Rationale</h1>
+
+            <div class="lead overview-font ovPadLeft backgroundText">
+              This research aimed to address a gaping hole in the field of
+              medical study
+              <ul>
+                <li>
+                  Experiments like these have yielded positive results in terms
+                  of inhibiting fungal growth
+                </li>
+                <li>
+                  Despite this, research in this particular field of study is
+                  largely undeveloped.
+                </li>
+                <li>
+                  This experiment aimed to expand a novel way to stop fungal
+                  infection
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="img/biology.jpeg"
+            class="landingPageImage"
+            id="rationaleImage"
+            alt="Water temperature thermal graph"
+          />
+        </div>
+        <!-- <div class="row">
+          <div class="col-sm-8 p3">
+            <h1 class="ovPadLeft">Rationale</h1>
+            <p class="lead overview-font ovPadLeft backgroundText">
+              &nbsp;&nbsp;&nbsp;In a world that was shaken by a viral pandemic,
+              humankind shouldn't expose itself to another epidemic, one caused
+              by microorganisms. Although plenty of research has been done to
+              develop prospective treatments for microorganisms like bacteria
+              and fungi, these treatments certainly have drawbacks. For example,
+              P. aeruginosa, a species of bacteria, has been documented to
+              develop resistance to antibiotic treatments (Wheatley et al.,
+              2021). In addition, although the media has highlighted the dangers
+              of various species of Cordyceps, a family of fungi, Candida Auris
+              is an emerging fungus that the World Health Organization has made
+              controlling this species of troubling fungus a priority (Chavez,
+              2023). This really starts to spark concern when one takes into
+              account the fact that another species in this class of Candida,
+              Candida Nivariensis, has been able to develop resistance to
+              certain drugs that were thought to have antifungal properties
+              (Borman et al., 2008). This study used a direct current on a
+              liquid culture of Schizosaccharomyces Pombe and investigated the
+              effects of the application of such a current to the culture.
+            </p>
+          </div>
+          <div class="col-sm-4 p3">
             <img
               class="img-fluid"
-              src="/img/19418.jpeg"
-              alt="Temperature graph"
+              src="/img/watermap.jpg"
+              alt="Water temperature thermal graph"
             />
-            <div class="col-sm-8 p3">
-              <h1 class="ovPadLeft">Background</h1>
-              <p class="lead overview-font ovPadLeft">
-                This is my life song, this is my fight song - Kendrick Lamar
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-8 p3">
-              <h1 class="ovPadLeft">Rationale</h1>
-              <p class="lead overview-font ovPadLeft">
-                This is my life song, this is my fight song - Kendrick Lamar
-              </p>
-            </div>
-            <div class="col-sm-4 p3">
-              <img
-                class="img-fluid"
-                src="/img/watermap.jpg"
-                alt="Water temperature thermal graph"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 p3">
-              <img
-                class="img-fluid"
-                src="/img/phytoplankton-pnas.jpg"
-                alt="Water temperature thermal graph"
-              />
-            </div>
-            <div class="col-sm-8 p3">
-              <h1 class="ovPadLeft">Research Practicum</h1>
-              <p class="lead overview-font ovPadLeft">
-                This is my life song, this is my fight song - Kendrick Lamar
-              </p>
-            </div>
           </div>
         </div>
-      </section>
+        <div class="row">
+          <div class="col-sm-4 p3">
+            <img
+              class="img-fluid"
+              src="/img/phytoplankton-pnas.jpg"
+              alt="Water temperature thermal graph"
+            />
+          </div>
+          <div class="col-sm-8 p3">
+            <h1 class="ovPadLeft">Abstract</h1>
+            <p class="lead overview-font ovPadLeft backgroundText">
+              &nbsp;&nbsp;&nbsp;In a world that was shaken by a viral pandemic,
+              humankind shouldn't expose itself to another epidemic, one caused
+              by microorganisms. Although plenty of research has been done to
+              develop prospective treatments for microorganisms like bacteria
+              and fungi, these treatments certainly have drawbacks. For example,
+              P. aeruginosa, a species of bacteria, has been documented to
+              develop resistance to antibiotic treatments (Wheatley et al.,
+              2021). In addition, although the media has highlighted the dangers
+              of various species of Cordyceps, a family of fungi, Candida Auris
+              is an emerging fungus that the World Health Organization has made
+              controlling this species of troubling fungus a priority (Chavez,
+              2023). This really starts to spark concern when one takes into
+              account the fact that another species in this class of Candida,
+              Candida Nivariensis, has been able to develop resistance to
+              certain drugs that were thought to have antifungal properties
+              (Borman et al., 2008). This study used a direct current on a
+              liquid culture of Schizosaccharomyces Pombe and investigated the
+              effects of the application of such a current to the culture.
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
 
-      <footer class="p-5 footer text-light text-center position-relative">
-        <div class="container">
-          <p class="lead">
-            Copyright &copy; SE 2024 Bootstrap Demo
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-              <i class="bi bi-arrow-up-circle h2"></i>
-            </a>
-          </p>
-        </div>
-      </footer>
-    </div>
+    <footer class="p-5 footer text-light text-center position-relative">
+      <div class="container">
+        <p class="lead">
+          Copyright &copy; SE 2024 Bootstrap Demo
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h2"></i>
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
