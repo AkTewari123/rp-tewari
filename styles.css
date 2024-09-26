@@ -68,15 +68,10 @@ h1 {
   text-align: left;
 }
 
-#rationaleImage {
-    width: 300px ;
-}
-
 .landingPageImage {
   display: inline;
   border-radius: 20px;
-  height: 30%;
-  width: 30%;
+  width: 400px;
   display: relative;
   margin: auto auto;
 }
@@ -88,17 +83,19 @@ ul {
 
 .aboutMeCards {
   padding: 10px;
-  /* margin-left: 7%; */
+  width: 100% !important;
   display: block;
   border: 2px solid rgb(39, 37, 37);
   border-radius: 20px;
   height: 105%;
+  font-size: 1.2em;
+  font-weight: 100px !important;
 }
 
 .pictures {
   border-radius: 100%;
-  width: 80px;
-  margin-left: 35%;
+  width: 20%;
+  margin-left: 40%;
   align-self: center;
 }
 .body {
@@ -112,6 +109,18 @@ ul {
 .icon-white {
   /* Arrow icon at bottom of page */
   color: #ffffff;
+}
+
+#aboutMeCard {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#aboutMeCardBody {
+  text-align: left !important;
+  font-size: 1.5em;
 }
 
 .nb-background-color {
@@ -128,8 +137,14 @@ navbar {
   text-align: center;
 }
 
+#scoutLogo {
+  width: 17%;
+  margin-left: 41.5%;
+}
+
 #aboutMe {
   padding: 20px 0px;
+  margin-bottom: 150px;
 }
 
 .nbMenuItem {
@@ -202,7 +217,7 @@ navbar {
 
 
 .smallerSteps {
-    width: 200px !important;
+    width: 232px !important;
 }
 
 
@@ -233,7 +248,11 @@ navbar {
     align-items: center;
     margin: auto;
     display: grid;
+    
+  }
 
+  #aboutMeCard {
+    width: 90%
   }
 }
 
@@ -258,9 +277,20 @@ navbar {
         width: 150% !important;
       }
     .landingPageImage {
-        width:40% !important;
+        width:35% !important;
       }
       .landingPage {
         font-size: 50%;
     }
+}
+
+
+@media (max-width: 573px) {
+  .backgroundText {
+    font-size: 2.5em
+  }
+  .landingPageImage {
+    width: 70% !important;
+  }
+
 }
