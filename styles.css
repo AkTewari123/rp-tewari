@@ -163,9 +163,17 @@ navbar {
   background-color: #dbe3e7;
 }
 
+.procedureDetails {
+  text-align: left;
+  margin-left: 1%;
+}
+
 #buttonComp {
   color: black !important;
   background-color: black !important;
+}
+.howto { 
+  text-align: left;
 }
 
 .ovPadLeft {
@@ -274,14 +282,14 @@ navbar {
       }
 
       .backgroundText {
-        font-size: 1.1em
+        font-size: 1.4em
       }
       .aboutMeCards {
 
         width: 150% !important;
       }
     .landingPageImage {
-        width:35% !important;
+        width:40% !important;
       }
       .landingPage {
         font-size: 50%;
