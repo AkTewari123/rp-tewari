@@ -256,7 +256,7 @@ navbar {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     #aboutMeGridContainer {
         grid-template-columns: 1fr;
         gap: 0.5em;
@@ -271,6 +271,10 @@ navbar {
         margin: auto;
         display: grid;
 
+      }
+
+      .backgroundText {
+        font-size: 1.1em
       }
       .aboutMeCards {
 
