@@ -15,7 +15,9 @@
   display: inline;
 }
 
-
+#worksCitedList {
+  margin-left: 20px;
+}
 #tableHeader {
   background-color: var(--accentColor) !important;
   color: white;
