@@ -4,20 +4,24 @@
 * {
   font-family: "Outfit";
 }
+
 :root {
   --accentColor: #1e57a2;
 }
+
 
 #explanationText {
   font-size: 1.1rem;
   display: inline;
 }
 
+
 #tableHeader {
   background-color: var(--accentColor) !important;
   color: white;
   text-align: center;
 }
+
 
 #explanationSection {
   background-color: var(--accentColor);
