@@ -1,0 +1,160 @@
+{% extends 'layout.html' %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <section class="procedure">
+    <div class="container"></div>
+    <h1 class="ml-4">Procedure</h1>
+    <br />
+    <table class="table table-hover table-bordered w-75 mx-auto">
+      <thead>
+        <tr id="tableHeader">
+          <th>
+            <h3>Step</h3>
+          </th>
+          <th>
+            <h3>Description</h3>
+          </th>
+          <th>
+            <h3>Image</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr class="align-middle">
+          <!-- scope = "row specifies it's the header for that row"-->
+          <th scope="row">
+            <h3 class="stepHeader">1</h3>
+          </th>
+          <td class="text-center">
+            <h3 class="howto">Measure out Water and Glucose Using a Balance</h3>
+            <div class="procedureDetails">
+              <ol>
+                <li>Use 150 mL of Water</li>
+                <li>Use 1 g of Glucose</li>
+              </ol>
+            </div>
+          </td>
+          <td>
+            <img
+              src="../static/img/stepOneWithoutLabel.png"
+              class="stepHeader w-50 smallerSteps stepImage"
+              alt="step one"
+            />
+          </td>
+        </tr>
+        <tr class="align-middle">
+          <!-- scope = "row specifies it's the header for that row"-->
+          <th scope="row">
+            <h3 class="stepHeader">2</h3>
+          </th>
+          <td class="text-center">
+            <h3 class="howto">
+              Mix Water, Yeast Extract, and Glucose Into a Bottle and Put It In
+              an Autoclave
+            </h3>
+            <div class="procedureDetails">
+              <ol>
+                <li>Use .25 grams of Extract</li>
+                <li>
+                  Put Autoclave Tape on the Bottle and Run it in the Autoclave
+                </li>
+              </ol>
+            </div>
+          </td>
+          <td>
+            <img
+              src="../static/img/stepTwoWithoutlabel.png"
+              class="stepHeader stepImage smallerSteps"
+              alt="Step two"
+            />
+          </td>
+        </tr>
+        <tr class="align-middle">
+          <!-- scope = "row specifies it's the header for that row"-->
+          <th scope="row">
+            <h3 class="stepHeader">3</h3>
+          </th>
+          <td class="text-center">
+            <h3 class="howto">
+              Mix Yeast Media with Glucose and Put it in a Water Bath
+            </h3>
+            <div class="procedureDetails">
+              <ol>
+                <li>Ensure you are wearing gloves & glasses for this step</li>
+                <li>Run the cycle for 24 hours</li>
+              </ol>
+            </div>
+          </td>
+          <td>
+            <img
+              src="../static/img/stepThreeWithoutLabel.png"
+              class="stepHeader w-75 smallerSteps stepImage"
+              alt="Step three"
+            />
+          </td>
+        </tr>
+        <tr class="align-middle">
+          <!-- scope = "row specifies it's the header for that row"-->
+          <th scope="row">
+            <h3 class="stepHeader">4</h3>
+          </th>
+          <td class="text-center">
+            <h3 class="howto">
+              Put Yeast In Gel Electrophoreisis Box and Run Current Through
+            </h3>
+            <div class="procedureDetails">
+              <ol>
+                <li>Shock the Yeast for Ten Minutes</li>
+                <li>For Control Groups Pour It directly Into a Bottle</li>
+              </ol>
+            </div>
+          </td>
+          <td>
+            <img
+              src="../static/img/stepFourWithoutLabel.png"
+              class="w-75 stepImage"
+              alt="Step four"
+            />
+          </td>
+        </tr>
+        <tr class="align-middle">
+          <!-- scope = "row specifies it's the header for that row"-->
+          <th scope="row">
+            <h3 class="stepHeader">5</h3>
+          </th>
+          <td class="text-center">
+            <h3 class="howto">
+              Empty Yeast Solution Into a Bottle and Collection Data With an
+              Ethanol Sensor & Vernier Graphical Analysis
+            </h3>
+            <div class="procedureDetails">
+              <ol>
+                <li>Collect Data for Ten Minutes Right After Shocking Yeast</li>
+                <li>
+                  Collect Data for Ten Minutes Two Days After Shocking Yeast
+                </li>
+              </ol>
+            </div>
+          </td>
+          <td>
+            <img
+              src="../static/img/stepFiveWithoutLabel.png"
+              class="w-75 stepImage"
+              alt="Step five"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer class="p-5 footer text-light text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; SE 2024 Bootstrap Demo</p>
+      <a href="#" class="position-absolute"
+        ><i class="bi bi-arrow-up-circle h2 icon-white"></i
+      ></a>
+    </div>
+  </footer>
+</html>
+
+{% endblock %}

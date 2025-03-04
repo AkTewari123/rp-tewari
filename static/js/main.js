@@ -1,5 +1,5 @@
 async function getData() {
-  const response = await fetch("./js/data.csv");
+  const response = await fetch("../static/js/data.csv");
   const data = await response.text();
   console.log(data);
 

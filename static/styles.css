@@ -203,9 +203,10 @@ navbar {
   display: inline-block;
   position: relative;
   color: #0087ca;
+  text-decoration: none;
 }
 
-.hover-underline-animation:after {
+.hover-underline-animation::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -217,10 +218,10 @@ navbar {
   transition: transform 0.35s ease-out;
 }
 
-.hover-underline-animation:hover:after {
-  transform: scaleX(1.1);
-  /*transform-origin: bottom left;*/
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
 }
+
 
 .stepImage {
   width: 200px !important;

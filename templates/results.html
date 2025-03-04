@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <section class="chartjs-sample">
+      <div
+        class="container d-flex overflow-hidden bg-light rounded-4"
+        id="chart-wrapper"
+      >
+        <canvas id="lineChart" style="width: 100%"></canvas>
+      </div>
+    </section>
+    <!-- <section style="margin-top: 20px">
+      <div
+        style="
+          width: 80%;
+          margin: 0 auto;
+          background-color: #1d4ed8;
+          color: white;
+          padding: 20px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+        "
+      ></div>
+    </section> -->
+    <footer class="p-5 footer text-light text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; SE 2024 Bootstrap Demo</p>
+        <a href="#" class="position-absolute"
+          ><i class="bi bi-arrow-up-circle h2 icon-white"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
+{% endblock %}

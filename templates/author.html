@@ -1,0 +1,106 @@
+{% extends 'layout.html' %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <body class="body">
+    <section id="aboutMe">
+      <div class="card" id="aboutMeCard">
+        <h1 id="aboutMeName">Akshat Tewari</h1>
+        <div class="card-body" id="aboutMeCardBody">
+          Hello and welcome to Akshat's author section! His interests are put
+          into cards and are displayed below! In short, he loves to
+          <ol>
+            <li><b>Code</b></li>
+            <li><b>Camp</b></li>
+            <li><b>Play Chess</b></li>
+          </ol>
+        </div>
+      </div>
+      <div id="aboutMeGridContainer">
+        <div class="aboutMeCards" id="coding" style="width: 18rem">
+          <div id="imageContainer">
+            <img
+              src="../static/img/boyScouts.png"
+              class="card-img-top pictures"
+              alt="Boy Scouts"
+              id="scoutLogo"
+            />
+          </div>
+          <hr />
+          <div class="card-body">
+            <h3
+              class="card-title"
+              style="text-align: center; margin-bottom: 15px"
+            >
+              Scouts
+            </h3>
+            <p class="card-text">
+              &nbsp;&nbsp;&nbsp;&nbsp;He has been a Boy Scout ever since he was
+              in the 6th grade. He loves to camp & to be out in nature. He loves
+              it when his troop cooks, swims or fishes on these campouts. In
+              addition, his scoutmaster is really nice, and he has learned
+              plenty from him.
+            </p>
+          </div>
+        </div>
+
+        <div class="aboutMeCards" id="coding" style="width: 18rem">
+          <div id="imageContainer">
+            <img
+              src="../static/img/coding.jpg"
+              class="card-img-top pictures"
+              alt="Image of coding"
+            />
+          </div>
+          <hr />
+          <div class="card-body">
+            <h3
+              class="card-title"
+              style="text-align: center; margin-bottom: 15px"
+            >
+              Coding
+            </h3>
+            <p class="card-text">
+              &nbsp;&nbsp;&nbsp;&nbsp;He loves coding and one day he wants to
+              work at JP Morgan Chase. One day, he wants to go to the University
+              of Michigan for CS and Cybersecurity. He is never afraid of a
+              challenge, and he loves to learn new things.
+            </p>
+          </div>
+        </div>
+        <div class="aboutMeCards" id="boyScouts" style="width: 18rem">
+          <div id="imageContainer">
+            <img
+              src="../static/img/chesswatercolor.jpg"
+              class="card-img-top pictures"
+              alt="Chess"
+            />
+          </div>
+          <hr />
+          <div class="card-body">
+            <h3
+              class="card-title"
+              style="text-align: center; margin-bottom: 15px"
+            >
+              Chess
+            </h3>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp;He loves chess, and he has been playing
+              the game for a long time. His brother taught him at the tender age
+              of 8. He loves attending tournaments and watching the best play in
+              high-stakes competitions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="p-5 footer text-light text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; SE 2024 Bootstrap Demo</p>
+        <a href="#" class="position-absolute"
+          ><i class="bi bi-arrow-up-circle h2 icon-white"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
+{% endblock %}
